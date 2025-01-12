@@ -5,6 +5,7 @@ void setup() {
 }
 
 void draw() {
+  frameRate(1);
   background(161, 140, 119);
   stroke(48, 41, 62);
   strokeWeight(6);
@@ -39,5 +40,4 @@ void draw() {
       }
     }
   }
-  noLoop();
 }
