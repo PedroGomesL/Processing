@@ -8,9 +8,9 @@ void setup() {
   rows = int(height/scale);
   cols = int(width/scale);
   flowfield = new float[rows][cols];
-  //generateFlowField();
-  generatePatternFlowField();
-  background(#051FFF);
+  generateFlowField();
+  //generatePatternFlowField();
+  background(#0FCC1C);
   frameRate(30);
 }
 
@@ -28,7 +28,7 @@ void illustrateFlowField(){
     float angle = flowfield[int(y/scale)][int(x/scale)];
     newx = x + scale*cos(angle);
     newy = y + scale*sin(angle);
-    stroke(54, map(angle, 0, 2*PI, 50, 100), map(angle, 0, 2*PI, 50, 100));
+    stroke(304, map(angle, 0, 2*PI, 100, 100), map(angle, 0, 2*PI, 100, 100));
     line(x, y, newx, newy);
     x = newx;
     y = newy;

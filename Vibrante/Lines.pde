@@ -5,9 +5,9 @@ color[] ca = {
   color(157, 199, 47), color(16, 77, 139), color(127, 98, 154),
   color(28, 170, 190)
 };
-float  r = random(300, 600);
+float  r = random(1200, width);
 float rr = r;
-float y3 = random (100, 600);
+float y3 = random (1200, width);
 float y4 = y3;
 class Line {
   float y1, y2;
@@ -28,9 +28,10 @@ class Line {
     float b = blue(ca[cor]);
 
     stroke(r, g, b);
-    strokeWeight(5);
+    strokeWeight(10);
 
     // Desenhar a linha com x variável
+
     line(0, y1, rr, y2); // Desenha a linha da posição atual
 
     // Atualizar a posição x gradualmente
@@ -50,9 +51,9 @@ class Line {
 
 
     stroke(r, g, b);
-    strokeWeight(5);
+    strokeWeight(10);
 
-    line(rr, y2, 700, y4);
+    line(rr, y2, width, y4);
   }
   // Função para atualizar y1 e y2, iniciando em uma nova posição
 }

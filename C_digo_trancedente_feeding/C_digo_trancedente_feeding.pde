@@ -2,7 +2,7 @@
 float nxi = random(100);
 float nyi = random(100);
 void setup() {
-size(700,1000);
+size(500,500);
 frameRate(30);
 background(255);
 }
@@ -30,7 +30,7 @@ nx += 0.1;
 float angulo = 360*noise(nx,ny);
 // Cores baseadas na inclinação das retas:
 float blue = 60 + map(angulo, 0, 360, 0, 255);
-stroke(blue,0,blue);
+stroke(blue,0,0);
 // Cálculo do ponto final da reta angulada:
 float xf = x + tamLinha*cos(radians(angulo));
 float yf = y + tamLinha*sin(radians(angulo));

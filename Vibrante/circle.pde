@@ -22,7 +22,7 @@ class Cir {
   void exibir() {
     noFill();
     strokeWeight(stroSize);
-    stroke(c[cor]); // Define a cor específica para este círculo
-    circle(x, y, extent); // Desenha o círculo em torno do mesmo ponto
+    stroke(c[cor]); // Define a rcor específica para este círculo
+    circle(width /2 - 150, height / 2 - 500, extent); // Desenha o círculo em torno do mesmo ponto
   }
 }

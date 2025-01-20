@@ -1,13 +1,14 @@
 float spacing = 70;
 
 void setup() {
-  size(640, 360);
+  fullScreen();
+  colorMode(HSB, 360,100,100);
 }
 
 void draw() {
   frameRate(1);
-  background(161, 140, 119);
-  stroke(48, 41, 62);
+  background(0, 100, 80);
+  stroke(58, 100 , 100);
   strokeWeight(6);
   noFill();
   for (float x = 45; x < width; x += spacing) {
